@@ -1,7 +1,7 @@
 {
     "moduleDependencies": 
     [
-        "official-base-authenication"
+        "official-base-authentication"
     ],
     "dependencies": {
         "mysql": "^2.18.1"
