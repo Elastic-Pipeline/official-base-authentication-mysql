@@ -19,7 +19,7 @@ export class MySQLDataStore extends DataStoreInterface
         });
     }
 
-    public Exec(_string: string, _values: any[]): void 
+    public Exec(_string: string, _values: any[]): void
     {
         this.db.connect((err) => {
             // Check for connection errors...
@@ -36,7 +36,7 @@ export class MySQLDataStore extends DataStoreInterface
             this.db.destroy();
         });
     }
-    
+
     public CreateTable(_tableName: string, ..._variables: DataStoreTableVariable[]): Promise<boolean> {
         throw new Error("Method not implemented.");
     }
