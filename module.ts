@@ -11,7 +11,7 @@ class BaseModule extends Module
         super("Base Authentication", fs.readFileSync(path.resolve(__dirname, "./version.txt")).toString("utf-8"));
 
         const dataStoreInterface = new MySQLDataStore(path.resolve(__dirname, 'data'));
-        DataStore.RegisterInterface(dataStoreInterface);
+        DataStore.SetDataStore(dataStoreInterface);
     }
 }
 
